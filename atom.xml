@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://silencezhou.github.io/"/>
-  <updated>2019-02-23T15:48:58.062Z</updated>
+  <updated>2019-02-23T15:52:10.170Z</updated>
   <id>https://silencezhou.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Flutter 网络的三种简单实现</title>
+    <title>Flutter 网络请求的三种简单实现</title>
     <link href="https://silencezhou.github.io/2019/02/23/Flutter-%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%89%E7%A7%8D%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/"/>
     <id>https://silencezhou.github.io/2019/02/23/Flutter-网络的三种简单实现/</id>
     <published>2019-02-23T15:27:26.000Z</published>
-    <updated>2019-02-23T15:48:58.062Z</updated>
+    <updated>2019-02-23T15:52:10.170Z</updated>
     
     <summary type="html">
     
