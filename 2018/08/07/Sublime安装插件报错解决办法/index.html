@@ -122,7 +122,7 @@
 <meta property="og:site_name" content="风云变幻">
 <meta property="og:description" content="1. Sublime安装插件报错解决办法 错误：There are no packages available for installation  解决办法：12345678910111213141516171819Step1:Preferences-&amp;gt;PackageSettings-&amp;gt;PackageControl-&amp;gt;Settings-UserStep2:在文件里面添加如下代码：">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-03T16:59:32.919Z">
+<meta property="og:updated_time" content="2019-03-14T23:49:49.249Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="开发工具攻略(一)">
 <meta name="twitter:description" content="1. Sublime安装插件报错解决办法 错误：There are no packages available for installation  解决办法：12345678910111213141516171819Step1:Preferences-&amp;gt;PackageSettings-&amp;gt;PackageControl-&amp;gt;Settings-UserStep2:在文件里面添加如下代码：">
@@ -407,7 +407,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-04 00:59:32" itemprop="dateModified" datetime="2019-03-04T00:59:32+08:00">2019-03-04</time>
+                <time title="修改时间：2019-03-15 07:49:49" itemprop="dateModified" datetime="2019-03-15T07:49:49+08:00">2019-03-15</time>
               
             
           </span>
@@ -511,7 +511,7 @@
 <p>解决办法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Step1:</span><br><span class="line"></span><br><span class="line">Preferences-&gt;PackageSettings-&gt;PackageControl-&gt;Settings-User</span><br><span class="line"></span><br><span class="line">Step2:</span><br><span class="line">在文件里面添加如下代码：</span><br><span class="line">&quot;debug&quot;: true,</span><br><span class="line">&quot;downloader_precedence&quot;: &#123;</span><br><span class="line">        &quot;windows&quot;: [&quot;wininet&quot;],</span><br><span class="line">        &quot;osx&quot;: [&quot;curl&quot;, &quot;wget&quot;],</span><br><span class="line">        &quot;linux&quot;: [&quot;urllib&quot;, &quot;curl&quot;, &quot;wget&quot;]</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Step3:</span><br><span class="line">	⁃	command + shift + p 进行插件安装</span><br><span class="line">	</span><br><span class="line">    首先的安装插件管理器： Install Package</span><br><span class="line">    然后输入要安装的插件名称</span><br></pre></td></tr></table></figure></p>
 <h2 id="2-Github转移项目到Coding-net"><a href="#2-Github转移项目到Coding-net" class="headerlink" title="2. Github转移项目到Coding.net"></a>2. Github转移项目到Coding.net</h2><p>笔者的需求：个人博客部署系统代码不需要进行在github上进行公开，github私有项目又需要付费，感觉不值，所以有此次需求</p>
 <p><a href="https://www.jianshu.com/p/93737d548a3d" target="_blank" rel="noopener">参考</a></p>
-<h3 id="1-Coding-net上建立一个新的私有仓库（有就不用建立）"><a href="#1-Coding-net上建立一个新的私有仓库（有就不用建立）" class="headerlink" title="1. Coding.net上建立一个新的私有仓库（有就不用建立）"></a>1. Coding.net上建立一个新的私有仓库（有就不用建立）</h3><h3 id="2-Coding-net配置公钥-git操作需要权限"><a href="#2-Coding-net配置公钥-git操作需要权限" class="headerlink" title="2.Coding.net配置公钥,git操作需要权限"></a>2.Coding.net配置公钥,git操作需要权限</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Step1</span><br><span class="line">command+shift+. 展示隐藏文件，然后cd到.ssh文件下面找到.pub结尾的文件(即公钥文件)，拷贝私钥</span><br><span class="line"></span><br><span class="line">Step2</span><br><span class="line">coding个人中心 - SSH公钥 - 新增公钥  添加就好</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ps:补充如何生成SSH公钥</span><br><span class="line">1. 根目录下 执行****</span><br><span class="line">ssh-keygen</span><br><span class="line">确认保存公钥的位置（.ssh/id_rsa）</span><br><span class="line">重复一个密码两次，如果不想在使用公钥的时候输入密码，可以留空</span><br><span class="line"></span><br><span class="line">2. 获取公钥 cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<h3 id="1-Coding-net上建立一个新的私有仓库（有就不用建立）"><a href="#1-Coding-net上建立一个新的私有仓库（有就不用建立）" class="headerlink" title="1. Coding.net上建立一个新的私有仓库（有就不用建立）"></a>1. Coding.net上建立一个新的私有仓库（有就不用建立）</h3><h3 id="2-Coding-net配置公钥-git操作需要权限"><a href="#2-Coding-net配置公钥-git操作需要权限" class="headerlink" title="2.Coding.net配置公钥,git操作需要权限"></a>2.Coding.net配置公钥,git操作需要权限</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Step1</span><br><span class="line">command+shift+. 展示隐藏文件，然后cd到.ssh文件下面找到.pub结尾的文件(即公钥文件)，拷贝私钥</span><br><span class="line"></span><br><span class="line">Step2</span><br><span class="line">coding个人中心 - SSH公钥 - 新增公钥  添加就好</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ps:补充如何生成SSH公钥</span><br><span class="line">1. 根目录下 执行</span><br><span class="line">ssh-keygen</span><br><span class="line">确认保存公钥的位置（.ssh/id_rsa）</span><br><span class="line">重复一个密码两次，如果不想在使用公钥的时候输入密码，可以留空</span><br><span class="line"></span><br><span class="line">2. 获取公钥 cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 <h3 id="3-把github上的代码clone到指定路径"><a href="#3-把github上的代码clone到指定路径" class="headerlink" title="3. 把github上的代码clone到指定路径"></a>3. 把github上的代码clone到指定路径</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone --bare https://github.com/***/******.git</span><br><span class="line"></span><br><span class="line">ps: --bare 创建的克隆版本库都不包含工作区，直接就是版本库的内容，这样的版本库称为裸版本库。</span><br></pre></td></tr></table></figure>
 <h4 id="4-使用镜像推送的方式上传代码到新的服务器"><a href="#4-使用镜像推送的方式上传代码到新的服务器" class="headerlink" title="4.使用镜像推送的方式上传代码到新的服务器"></a>4.使用镜像推送的方式上传代码到新的服务器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd xxxx.git</span><br><span class="line"></span><br><span class="line">git push --mirror https://git.coding.net/cc412/xxxx.git</span><br><span class="line"></span><br><span class="line">ps:  https://git.coding.net/cc412/xxxx.git  是coding.net仓库地址</span><br><span class="line">     如果https不行推荐用SSH</span><br></pre></td></tr></table></figure>
 <h3 id="5-删除本地代码"><a href="#5-删除本地代码" class="headerlink" title="5.删除本地代码"></a>5.删除本地代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ..//返回上一路径</span><br><span class="line">rm -rf xxxx.git //干掉</span><br></pre></td></tr></table></figure>
@@ -712,7 +712,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -737,9 +737,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -871,7 +869,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">46k</span>
+    <span title="站点总字数">110k</span>
   
 
   
@@ -882,7 +880,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">42 分钟</span>
+    <span title="站点阅读时长">1:40</span>
   
 </div>
 
