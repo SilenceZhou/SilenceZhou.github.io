@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="Mobile Dev, Better late than never.">
+<meta name="description" content="Better late than never.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="SilenceZhou">
 <meta property="og:url" content="https://silencezhou.github.io/tags/个人成长/index.html">
 <meta property="og:site_name" content="SilenceZhou">
-<meta property="og:description" content="Mobile Dev, Better late than never.">
+<meta property="og:description" content="Better late than never.">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SilenceZhou">
-<meta name="twitter:description" content="Mobile Dev, Better late than never.">
+<meta name="twitter:description" content="Better late than never.">
 
 
 
@@ -364,7 +364,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">SilenceZhou</p>
-              <p class="site-description motion-element" itemprop="description">Mobile Dev, Better late than never.</p>
+              <p class="site-description motion-element" itemprop="description">Better late than never.</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -414,41 +414,39 @@
           
 
           
-
-          
-          
-
-          
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                Links
-              </div>
-              <ul class="links-of-blogroll-list">
+            <div class="links-of-author motion-element">
                 
-                  <li class="links-of-blogroll-item">
-                    <a href="https://www.jianshu.com/u/065d6ccf06dc" title="JianShu" target="_blank">JianShu</a>
-                  </li>
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/SilenceZhou" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i></a>
+                  </span>
                 
-                  <li class="links-of-blogroll-item">
-                    <a href="https://github.com/SilenceZhou" title="GitHub" target="_blank">GitHub</a>
-                  </li>
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/SilenceZhouShuai" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i></a>
+                  </span>
                 
-                  <li class="links-of-blogroll-item">
-                    <a href="https://weibo.com/SilenceZhouShuai" title="Weibo" target="_blank">Weibo</a>
-                  </li>
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/065d6ccf06dc" target="_blank" title="JianShu">
+                      
+                        <i class="fa fa-fw fa-book"></i></a>
+                  </span>
                 
-                  <li class="links-of-blogroll-item">
-                    <a href="https://stackoverflow.com/users/10193470/silencezhou" title="StackOverflow" target="_blank">StackOverflow</a>
-                  </li>
+                  <span class="links-of-author-item">
+                    <a href="https://juejin.im/user/5792d722c4c9710054029755" target="_blank" title="Juejin">
+                      
+                        <i class="fa fa-fw fa-graduation-cap"></i></a>
+                  </span>
                 
-                  <li class="links-of-blogroll-item">
-                    <a href="https://juejin.im/user/5792d722c4c9710054029755" title="Juejin" target="_blank">Juejin</a>
-                  </li>
-                
-              </ul>
             </div>
+          
+
+          
+          
+
+          
           
 
           
@@ -677,7 +675,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "./public/search.xml";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
@@ -879,7 +877,7 @@
 
                   // select top N slices in content
 
-                  var upperBound = parseInt('');
+                  var upperBound = parseInt('1');
                   if (upperBound >= 0) {
                     slicesOfContent = slicesOfContent.slice(0, upperBound);
                   }
@@ -946,7 +944,7 @@
             }
           }
 
-          if ('auto' === '') {
+          if ('auto' === 'auto') {
             input.addEventListener('input', inputEventFunction);
           } else {
             $('.search-icon').click(inputEventFunction);
