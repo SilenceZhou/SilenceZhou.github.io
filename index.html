@@ -433,7 +433,7 @@
           本文为 《Flutter Bloc Package》 的译文，原文地址，若转载本译文请注明出处。
 
 在使用Flutter工作一段时间之后，我决定创建一个软件包以帮助我经常使用的东西：BLoC模式。对于那些不熟悉BLoC模式的人来说，它是一种设计模式，有助于将表示层与业务逻辑分开。你在这里了解更多。
-
+使用BLoC模式可能具有挑战性,因为需要建立对Streams和Reactive Programmin
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -639,7 +639,7 @@ BLoC，Reactive Programming，Streams - 实际用例和有用模式。
 [TOC]注：此处的”toc”应显示为目录，但是简书不支持，显示不出来。
 介绍
 
-在介绍了BLoC，Reac
+在介绍了BLoC，Reactive Programming和Streams的概念后，我在一段时间之前做了一些介绍，尽管与我分享
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -840,7 +840,10 @@ BLoC，Reactive Programming，Streams - 实际用例和有用模式。
       
         
           
-          【译文】Reactive Programming - Streams - BLoC本译文介绍Streams、Bloc 和 Reactive Programming 的概念。理论和实践范例。对于作者的个人note没有进行翻译，请自行翻阅原文地址 原文原码。和iOS开发中的RAC相似，本文推荐重点在 &
+          【译文】Reactive Programming - Streams - BLoC本译文介绍Streams、Bloc 和 Reactive Programming 的概念。理论和实践范例。对于作者的个人note没有进行翻译，请自行翻阅原文地址 原文原码。和iOS开发中的RAC相似，本文推荐重点在 &lt;如何基于流出的数据构建Widge&gt;！
+难度：中级
+本文纪实
+本译文的原文是在学 BLoC
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1046,7 +1049,7 @@ BLoC，Reactive Programming，Streams - 实际用例和有用模式。
 
 
 一、定制Title
-目标：App导航栏title换成需要切换条（iOS中叫Segment）1、flutter提供的AppBar的title属性就是wigdet，所有我们可以直接把title设置为tabbar;2、需要相应的页面来进行联动，所以需要关联SingleTic
+目标：App导航栏title换成需要切换条（iOS中叫Segment）1、flutter提供的AppBar的title属性就是wigdet，所有我们可以直接把title设置为tabbar;2、需要相应的页面来进行联动，所以需要关联SingleTickerProviderStateMixin, 且把tabbar的controller 和 TabBa
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1250,7 +1253,7 @@ BLoC，Reactive Programming，Streams - 实际用例和有用模式。
           
 概述：本文主要讲解了flutter网络请求三种方式 flutter自带的HttpClient、 第三方库http 和 第三方库Dio  的简单实现 GET 和 POST请求，本文是笔者学习Flutter网络模块知识总结，若有问题还望不腻赐教。 
 
-一.系统自带HttpClient1.使用中温馨提示
+一.系统自带HttpClient1.使用中温馨提示1.1.导入库12import 'dart:io'; // 网络请求import 'dart:con
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1452,7 +1455,7 @@ BLoC，Reactive Programming，Streams - 实际用例和有用模式。
         
           
           1、方法一：键和值一起替换
-1234567891011121314151617- (NSString *) paramValueOfUrl:(NSString *) url withParam:(NSString *) param value:(NSString *)value&#123;     
+1234567891011121314151617- (NSString *) paramValueOfUrl:(NSString *) url withParam:(NSString *) param value:(NSString *)value&#123;        NSError *error;    NSString *targetString = [NS
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1657,7 +1660,7 @@ BLoC，Reactive Programming，Streams - 实际用例和有用模式。
 错误：There are no packages available for installation
 
 解决办法：
-12345678910111213141516171819Step1:Preferences-&gt;PackageSettings-&gt
+12345678910111213141516171819Step1:Preferences-&gt;PackageSettings-&gt;PackageControl-&gt;Settings-UserStep2:在文件里面添加如下代码
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1861,7 +1864,7 @@ BLoC，Reactive Programming，Streams - 实际用例和有用模式。
           前提为你已经搭建好hexo next博客如果没有，则参考搭建吧😝注意：下载next地址变了next新地址博客部署命令可以用&amp;&amp;操作：
 
 hexo clean &amp;&amp; hexo g &amp;&amp; hexo s
-hexo clean &amp;&amp; hexo
+hexo clean &amp;&amp; hexo g &amp;&amp; hexo d！！！很多插件安装，网上的如果不行，请直接参考插件官网，最官
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -2063,7 +2066,8 @@ hexo clean &amp;&amp; hexo
         
           
           一线开发者应该定时整理下自己应该掌握哪些技能树，并思考如何规划以后横向或纵向的学习路线，以为下鄙人在学习过程中发现库iOS-Developer-Roadmap，感觉挺有价值所以用进行记录并翻译技能树。
-PS:iOS-Developer-Roadmap项目发现的地方为Chrome的一个推荐Github
+PS:iOS-Developer-Roadmap项目发现的地方为Chrome的一个推荐Github项目插件 GitHunt Dark（寻找最受欢迎的GitHub项目）
+BohdanOrlov的Git
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -2275,7 +2279,9 @@ ReactiveCocoa(简称：RAC)为一个开源函数响应式编程框架；
 
 Demo地址
 
-由于Swift和OC版本存在的差异性比较大，维护团队直接给拆了一下： Swift版本（Reacti
+由于Swift和OC版本存在的差异性比较大，维护团队直接给拆了一下： Swift版本（ReactiveSwift）和 OC版本（ReactiveCocoa）
+
+写该篇文章的初衷： 如何使用RAC 和
           ...
           <!--noindex-->
           <div class="post-button text-center">
