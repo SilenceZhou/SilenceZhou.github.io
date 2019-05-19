@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>SilenceZhou</title>
+  <title>SilenceZhou&#39;s Blog</title>
   
-  <subtitle>一只程序猿的乐园</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://silencezhou.github.io/"/>
-  <updated>2019-04-02T17:26:36.410Z</updated>
+  <updated>2019-05-17T23:45:29.889Z</updated>
   <id>https://silencezhou.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://silencezhou.github.io/2019/04/03/Flutter-BLoC-%E7%AC%AC%E4%B8%89%E8%AE%B2/"/>
     <id>https://silencezhou.github.io/2019/04/03/Flutter-BLoC-第三讲/</id>
     <published>2019-04-02T16:42:59.000Z</published>
-    <updated>2019-04-02T17:26:36.410Z</updated>
+    <updated>2019-05-17T23:45:29.889Z</updated>
     
     <summary type="html">
     

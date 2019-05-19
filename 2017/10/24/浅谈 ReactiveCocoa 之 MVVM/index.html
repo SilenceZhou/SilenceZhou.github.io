@@ -43,6 +43,38 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Italianno:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
@@ -51,16 +83,16 @@
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar180x180.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar32x32.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar16x16.png?v=5.1.4">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+  <link rel="mask-icon" href="/images/avatar.png?v=5.1.4" color="#222">
 
 
 
@@ -72,7 +104,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="SilenceZhou" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="SilenceZhou's Blog" type="application/atom+xml">
 
 
 
@@ -84,7 +116,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈 ReactiveCocoa 之 MVVM">
 <meta property="og:url" content="https://silencezhou.github.io/2017/10/24/浅谈 ReactiveCocoa 之 MVVM/index.html">
-<meta property="og:site_name" content="SilenceZhou">
+<meta property="og:site_name" content="SilenceZhou&#39;s Blog">
 <meta property="og:description" content="简介 ：  ReactiveCocoa(简称：RAC)为一个开源函数响应式编程框架；  使用场景：通过RAC可以更加方便编程进行MVVM设计模式编程；  核心机制为信号（信号流）。  Demo地址  由于Swift和OC版本存在的差异性比较大，维护团队直接给拆了一下： Swift版本（ReactiveSwift）和 OC版本（ReactiveCocoa）  写该篇文章的初衷： 如何使用RAC 和">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-08-08T13:29:43.664Z">
@@ -126,7 +158,7 @@
 
 
 
-  <title>浅谈 ReactiveCocoa 之 MVVM | SilenceZhou</title>
+  <title>浅谈 ReactiveCocoa 之 MVVM | SilenceZhou's Blog</title>
   
 
 
@@ -150,18 +182,18 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta custom-logo">
     
 
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">SilenceZhou</span>
+        <span class="site-title">SilenceZhou's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">一只程序猿的乐园</p>
+        <p class="site-subtitle"></p>
       
   </div>
 
@@ -217,6 +249,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-关于">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
           </a>
         </li>
       
@@ -290,11 +332,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SilenceZhou">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar_square.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SilenceZhou">
+      <meta itemprop="name" content="SilenceZhou's Blog">
     </span>
 
     
@@ -320,19 +362,7 @@
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-08-08T21:29:43+08:00">
-                2018-08-08
-              </time>
             
           </span>
 
@@ -362,26 +392,11 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/10/24/浅谈 ReactiveCocoa 之 MVVM/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/10/24/浅谈 ReactiveCocoa 之 MVVM/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
           
 
-          
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-file-o"></i>
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
-            </span>
           
 
           
@@ -554,11 +569,22 @@
 
     
 
+    <div>
+     
+     <div>
+    
+        <div style="text-align:center;color: #D3D3D3;font-size:10px;">------------- End  <i class="fa fa-hourglass-end" aria-hidden="true"></i>  Thank For Your Reading -------------</div>
+    
+</div>
+
+     
+    </div>
+
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/iOS/" rel="tag"># iOS</a>
+            <a href="/tags/iOS/" rel="tag"><i class="fa fa-tag"></i> iOS</a>
           
         </div>
       
@@ -665,8 +691,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+            <a href="/">
+              <img class="site-author-image" itemprop="image" src="/images/avatar_square.jpg" alt="SilenceZhou">
+            </a>
+            
               <p class="site-author-name" itemprop="name">SilenceZhou</p>
-              <p class="site-description motion-element" itemprop="description">Better late than never.</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -721,25 +751,25 @@
                   <span class="links-of-author-item">
                     <a href="https://github.com/SilenceZhou" target="_blank" title="GitHub">
                       
-                        <i class="fa fa-fw fa-github"></i></a>
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://weibo.com/SilenceZhouShuai" target="_blank" title="Weibo">
                       
-                        <i class="fa fa-fw fa-weibo"></i></a>
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://www.jianshu.com/u/065d6ccf06dc" target="_blank" title="JianShu">
                       
-                        <i class="fa fa-fw fa-book"></i></a>
+                        <i class="fa fa-fw fa-book"></i>JianShu</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://juejin.im/user/5792d722c4c9710054029755" target="_blank" title="Juejin">
                       
-                        <i class="fa fa-fw fa-graduation-cap"></i></a>
+                        <i class="fa fa-fw fa-graduation-cap"></i>Juejin</a>
                   </span>
                 
             </div>
@@ -771,52 +801,29 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
+  <span class="with-love" id="heart">
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">SilenceZhou</span>
 
   
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    
-      <span class="post-meta-item-text">Site words total count&#58;</span>
-    
-    <span title="Site words total count">29.1k</span>
-  
 </div>
 
 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
 
         
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      
-    </span>
-  
-
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      
-    </span>
-  
-</div>
-
 
 
 
@@ -942,8 +949,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://SilenceZhou.disqus.com/count.js" async></script>
     
 
     
@@ -1363,5 +1368,9 @@
 
   
 
+
+  <script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
+  <script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+  
 </body>
 </html>
