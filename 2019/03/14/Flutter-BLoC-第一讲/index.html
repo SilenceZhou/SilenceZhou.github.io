@@ -119,16 +119,16 @@
 <meta property="og:site_name" content="SilenceZhou&#39;s Blog">
 <meta property="og:description" content="【译文】Reactive Programming - Streams - BLoC本译文介绍Streams、Bloc 和 Reactive Programming 的概念。理论和实践范例。对于作者的个人note没有进行翻译，请自行翻阅原文地址 原文原码。和iOS开发中的RAC相似，本文推荐重点在 &amp;lt;如何基于流出的数据构建Widge&amp;gt;！ 难度：中级 本文纪实 本译文的原文是在学 BLoC">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/699599-317db649dd785a8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/699599-ec883ab1dc660e96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/699599-374b541a5bca7819.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/699599-2924b4cd35807a27.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/699599-0c134afe157126d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-04-02T17:26:40.482Z">
+<meta property="og:image" content="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc1/1PublishSubject_g.png">
+<meta property="og:image" content="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc1/2behaviorSubject_g.png">
+<meta property="og:image" content="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc1/3ReplaySubject_g.png">
+<meta property="og:image" content="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc1/4BLoC_g.png">
+<meta property="og:image" content="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc1/5_flow_g.png">
+<meta property="og:updated_time" content="2020-03-18T02:14:22.787Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flutter-BLoC-第一讲">
 <meta name="twitter:description" content="【译文】Reactive Programming - Streams - BLoC本译文介绍Streams、Bloc 和 Reactive Programming 的概念。理论和实践范例。对于作者的个人note没有进行翻译，请自行翻阅原文地址 原文原码。和iOS开发中的RAC相似，本文推荐重点在 &amp;lt;如何基于流出的数据构建Widge&amp;gt;！ 难度：中级 本文纪实 本译文的原文是在学 BLoC">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/699599-317db649dd785a8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:image" content="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc1/1PublishSubject_g.png">
 
 
 
@@ -555,7 +555,7 @@
 </tbody></table>
 <p>正如刚才所说，RxDart 扩展了原始的Dart Streams API并提供了StreamController的 3个主要变体：</p>
 <h4 id="PublishSubject"><a href="#PublishSubject" class="headerlink" title="PublishSubject"></a>PublishSubject</h4><blockquote>
-<p>PublishSubject是普通的广播 StreamController， 有一个例外：Stream返回一个Observable，而不是Stream。<br><img src="https://upload-images.jianshu.io/upload_images/699599-317db649dd785a8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>PublishSubject是普通的广播 StreamController， 有一个例外：Stream返回一个Observable，而不是Stream。<br><img src="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc1/1PublishSubject_g.png" alt="image.png"></p>
 </blockquote>
 <blockquote>
 <p>如你所见，PublishSubject仅向监听器发送在订阅之后添加到Stream的事件。</p>
@@ -563,14 +563,14 @@
 <h4 id="BehaviorSubject"><a href="#BehaviorSubject" class="headerlink" title="BehaviorSubject"></a>BehaviorSubject</h4><blockquote>
 <p>该BehaviorSubject也是广播 StreamController，它返回一个<strong>Observable</strong>，而不是<strong>Stream</strong>。</p>
 </blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/699599-ec883ab1dc660e96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc1/2behaviorSubject_g.png" alt="image.png"></p>
 <blockquote>
 <p>与PublishSubject的主要区别在于BehaviorSubject还将最后发送的事件发送给刚刚订阅的监听器。</p>
 </blockquote>
 <h4 id="ReplaySubject"><a href="#ReplaySubject" class="headerlink" title="ReplaySubject"></a>ReplaySubject</h4><blockquote>
 <p><strong>ReplaySubject</strong> 也是一个广播StreamController，它返回一个Observable，而不是Stream。</p>
 </blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/699599-374b541a5bca7819.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc1/3ReplaySubject_g.png" alt="image.png"></p>
 <p>默认情况下，<strong>ReplaySubject</strong>将<strong>Stream</strong>已经发出的所有事件作为第一个事件发送给任何新的监听器。</p>
 <h4 id="关于资源的重要说明"><a href="#关于资源的重要说明" class="headerlink" title="关于资源的重要说明"></a>关于资源的重要说明</h4><blockquote>
 <p>经常释放不再需要的资源是一种非常好的做法。<br>本声明适用于：</p>
@@ -650,7 +650,7 @@
 <h4 id="它究竟意味着什么？"><a href="#它究竟意味着什么？" class="headerlink" title="它究竟意味着什么？"></a>它究竟意味着什么？</h4><blockquote>
 <p>BLoC模式 是利用我们刚才上面所讨论的观念：<strong>Streams</strong> （流）</p>
 </blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/699599-2924b4cd35807a27.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc1/4BLoC_g.png" alt="image.png"></p>
 <blockquote>
 <ul>
 <li>Widgets 通过 Sinks 向 BLoC 发送事件(event)</li>
@@ -815,7 +815,7 @@
 <li>outFavorites流<br>强制重建MovieDetailsWidget（“最喜欢的”图标）<br>强制重建_buildMoieCard（“最喜欢的”图标）<br>用于构建每个MovieDetailsWidget</li>
 </ul>
 </blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/699599-0c134afe157126d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc1/5_flow_g.png" alt="image.png"></p>
 <h5 id="观察"><a href="#观察" class="headerlink" title="观察"></a>观察</h5><p>大多数Widget和Page都是StatelessWidgets，这意味着：</p>
 <blockquote>
 <ul>
@@ -1101,7 +1101,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
