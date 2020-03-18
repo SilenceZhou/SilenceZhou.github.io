@@ -86,7 +86,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar180x180.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar32x32.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png?v=5.1.4">
 
 
   <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar16x16.png?v=5.1.4">
@@ -111,19 +111,19 @@
 
 
 
-<meta name="description" content="本文为 《Flutter Bloc Package》 的译文，原文地址，若转载本译文请注明出处。  在使用Flutter工作一段时间之后，我决定创建一个软件包以帮助我经常使用的东西：BLoC模式。对于那些不熟悉BLoC模式的人来说，它是一种设计模式，有助于将表示层与业务逻辑分开。你在这里了解更多。 使用BLoC模式可能具有挑战性,因为需要建立对Streams和Reactive Programmin">
+<meta name="description" content="本文为 《Flutter Bloc Package》 的译文，原文地址主要讲 BLoC 的第三方框架 bloc ，若转载本译文请注明出处。本译文主要内如下：  Glossary(词汇表) Bloc API BlocBuilder BlocProvider  在使用Flutter工作一段时间之后，我决定创建一个软件包以帮助我经常使用的东西：BLoC模式。对于那些不熟悉BLoC模式的人来说，它是一种设">
 <meta name="keywords" content="Flutter">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Flutter-BLoC-第三讲">
 <meta property="og:url" content="https://silencezhou.github.io/2019/04/03/Flutter-BLoC-第三讲/index.html">
 <meta property="og:site_name" content="SilenceZhou&#39;s Blog">
-<meta property="og:description" content="本文为 《Flutter Bloc Package》 的译文，原文地址，若转载本译文请注明出处。  在使用Flutter工作一段时间之后，我决定创建一个软件包以帮助我经常使用的东西：BLoC模式。对于那些不熟悉BLoC模式的人来说，它是一种设计模式，有助于将表示层与业务逻辑分开。你在这里了解更多。 使用BLoC模式可能具有挑战性,因为需要建立对Streams和Reactive Programmin">
+<meta property="og:description" content="本文为 《Flutter Bloc Package》 的译文，原文地址主要讲 BLoC 的第三方框架 bloc ，若转载本译文请注明出处。本译文主要内如下：  Glossary(词汇表) Bloc API BlocBuilder BlocProvider  在使用Flutter工作一段时间之后，我决定创建一个软件包以帮助我经常使用的东西：BLoC模式。对于那些不熟悉BLoC模式的人来说，它是一种设">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc3/1.png">
-<meta property="og:updated_time" content="2020-03-18T02:44:22.693Z">
+<meta property="og:updated_time" content="2020-03-18T03:18:37.742Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flutter-BLoC-第三讲">
-<meta name="twitter:description" content="本文为 《Flutter Bloc Package》 的译文，原文地址，若转载本译文请注明出处。  在使用Flutter工作一段时间之后，我决定创建一个软件包以帮助我经常使用的东西：BLoC模式。对于那些不熟悉BLoC模式的人来说，它是一种设计模式，有助于将表示层与业务逻辑分开。你在这里了解更多。 使用BLoC模式可能具有挑战性,因为需要建立对Streams和Reactive Programmin">
+<meta name="twitter:description" content="本文为 《Flutter Bloc Package》 的译文，原文地址主要讲 BLoC 的第三方框架 bloc ，若转载本译文请注明出处。本译文主要内如下：  Glossary(词汇表) Bloc API BlocBuilder BlocProvider  在使用Flutter工作一段时间之后，我决定创建一个软件包以帮助我经常使用的东西：BLoC模式。对于那些不熟悉BLoC模式的人来说，它是一种设">
 <meta name="twitter:image" content="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc3/1.png">
 
 
@@ -334,7 +334,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SilenceZhou">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar_square.jpg">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -456,7 +456,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc3/1.png" rel="gallery_ck7wq9haa0000daz16zvt87js" itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc3/1.png" rel="gallery_ck7wrpcgp00005bz1d2lqexw4" itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc3/1.png" itemprop="contentUrl">
               </a>
             
@@ -468,8 +468,13 @@
       
 
       
-        <p>本文为 <strong>《Flutter Bloc Package》</strong> 的译文，<a href="https://medium.com/flutter-community/flutter-bloc-package-295b53e95c5c" target="_blank" rel="noopener">原文地址</a>，若转载本译文请注明出处。</p>
-<p><img src="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc3/1.png" alt="image.png"></p>
+        <p>本文为 <strong>《Flutter Bloc Package》</strong> 的译文，<a href="https://medium.com/flutter-community/flutter-bloc-package-295b53e95c5c" target="_blank" rel="noopener">原文地址</a>主要讲 <code>BLoC</code> 的第三方框架 <a href="https://felangel.github.io/bloc/#/" target="_blank" rel="noopener">bloc</a> ，若转载本译文请注明出处。本译文主要内如下：</p>
+<ul>
+<li><strong>Glossary(词汇表)</strong></li>
+<li><strong>Bloc API</strong></li>
+<li><strong>BlocBuilder</strong></li>
+<li><strong>BlocProvider</strong></li>
+</ul>
 <p>在使用Flutter工作一段时间之后，我决定创建一个软件包以帮助我经常使用的东西：BLoC模式。<br>对于那些不熟悉BLoC模式的人来说，它是一种设计模式，有助于将表示层与业务逻辑分开。你在<a href="https://www.youtube.com/watch?v=fahC3ky_zW0" target="_blank" rel="noopener">这里</a>了解更多。</p>
 <p>使用BLoC模式可能具有挑战性,因为需要建立对Streams和Reactive Programming的理解。但它的核心是BLoC非常简单：</p>
 <blockquote>
@@ -660,7 +665,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
             <a href="/">
-              <img class="site-author-image" itemprop="image" src="/images/avatar_square.jpg" alt="SilenceZhou">
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="SilenceZhou">
             </a>
             
               <p class="site-author-name" itemprop="name">SilenceZhou</p>
@@ -674,7 +679,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -685,7 +690,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -696,7 +701,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -798,7 +803,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">29.1k</span>
+    <span title="Site words total count">27.8k</span>
   
 </div>
 

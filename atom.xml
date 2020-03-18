@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://silencezhou.github.io/"/>
-  <updated>2020-03-18T02:44:22.693Z</updated>
+  <updated>2020-03-18T03:18:37.742Z</updated>
   <id>https://silencezhou.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://silencezhou.github.io/2019/04/03/Flutter-BLoC-%E7%AC%AC%E4%B8%89%E8%AE%B2/"/>
     <id>https://silencezhou.github.io/2019/04/03/Flutter-BLoC-第三讲/</id>
     <published>2019-04-02T16:42:59.000Z</published>
-    <updated>2020-03-18T02:44:22.693Z</updated>
+    <updated>2020-03-18T03:18:37.742Z</updated>
     
     <summary type="html">
     
@@ -47,7 +47,7 @@
     <link href="https://silencezhou.github.io/2019/03/14/Flutter-BLoC-%E7%AC%AC%E4%BA%8C%E8%AE%B2/"/>
     <id>https://silencezhou.github.io/2019/03/14/Flutter-BLoC-第二讲/</id>
     <published>2019-03-14T09:55:58.000Z</published>
-    <updated>2020-03-18T02:45:04.464Z</updated>
+    <updated>2020-03-18T03:19:41.613Z</updated>
     
     <summary type="html">
     
@@ -228,32 +228,6 @@
   </entry>
   
   <entry>
-    <title>iOS Developer Skills Matrix</title>
-    <link href="https://silencezhou.github.io/2018/08/06/iOS%20Developer%20Skills%20Matrix/"/>
-    <id>https://silencezhou.github.io/2018/08/06/iOS Developer Skills Matrix/</id>
-    <published>2018-08-06T03:02:00.000Z</published>
-    <updated>2018-08-08T13:29:43.663Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;一线开发者应该定时整理下自己应该掌握哪些技能树，并思考如何规划以后横向或纵向的学习路线，以为下鄙人在学习过程中发现库&lt;a href=&quot;https://github.com/BohdanOrlov/iOS-Developer-Roadmap&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="iOS学习" scheme="https://silencezhou.github.io/categories/iOS%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="iOS" scheme="https://silencezhou.github.io/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
     <title>浅谈 ReactiveCocoa 之 MVVM</title>
     <link href="https://silencezhou.github.io/2017/10/24/%E6%B5%85%E8%B0%88%20ReactiveCocoa%20%E4%B9%8B%20MVVM/"/>
     <id>https://silencezhou.github.io/2017/10/24/浅谈 ReactiveCocoa 之 MVVM/</id>
@@ -268,32 +242,6 @@
         
           &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;简介&lt;/strong&gt;
-        
-      
-    
-    </summary>
-    
-      <category term="iOS学习" scheme="https://silencezhou.github.io/categories/iOS%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="iOS" scheme="https://silencezhou.github.io/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ARKit解读</title>
-    <link href="https://silencezhou.github.io/2017/06/07/ARKit%E8%A7%A3%E8%AF%BB/"/>
-    <id>https://silencezhou.github.io/2017/06/07/ARKit解读/</id>
-    <published>2017-06-07T01:42:00.000Z</published>
-    <updated>2018-08-08T13:29:43.662Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/arkit&quot; target=&quot;_blank&quot;
         
       
     
@@ -329,36 +277,6 @@
     
     
       <category term="摄影" scheme="https://silencezhou.github.io/tags/%E6%91%84%E5%BD%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iOS开发成长之道</title>
-    <link href="https://silencezhou.github.io/2015/12/28/iOS%E6%88%90%E9%95%BF%E4%B9%8B%E8%B7%AF/"/>
-    <id>https://silencezhou.github.io/2015/12/28/iOS成长之路/</id>
-    <published>2015-12-28T08:02:00.000Z</published>
-    <updated>2018-08-08T13:29:43.663Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;1、创作（写有深度的博客、仿制优秀的项目、随时记录理解）；&lt;/p&gt;
-&lt;p&gt;2、做有难度的项目；&lt;/p&gt;
-&lt;p&gt;3、“不用则废”不只是针对技能，还针对理解；&lt;/p&gt;
-&lt;p&gt;4、尽量少抱大腿,或者压根就别抱大腿；&lt;/p&gt;
-&lt;p&gt;5、多读源码(用五柳先生的话就是,不求甚解.
-        
-      
-    
-    </summary>
-    
-      <category term="感悟" scheme="https://silencezhou.github.io/categories/%E6%84%9F%E6%82%9F/"/>
-    
-    
-      <category term="个人成长" scheme="https://silencezhou.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
   </entry>
   

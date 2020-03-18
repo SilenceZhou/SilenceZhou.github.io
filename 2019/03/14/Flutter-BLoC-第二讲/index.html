@@ -86,7 +86,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar180x180.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar32x32.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png?v=5.1.4">
 
 
   <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar16x16.png?v=5.1.4">
@@ -111,19 +111,19 @@
 
 
 
-<meta name="description" content="[译文]Reactive Programming - Streams - BLoC实际用例 原文 BLoC，Reactive Programming，Streams - 实际用例和有用模式。 [TOC]注：此处的”toc”应显示为目录，但是简书不支持，显示不出来。 介绍  在介绍了BLoC，Reactive Programming和Streams的概念后，我在一段时间之前做了一些介绍，尽管与我分享">
+<meta name="description" content="[译文]Reactive Programming - Streams - BLoC实际用例 原文 BLoC，Reactive Programming，Streams - 实际用例和有用模式。 介绍  在介绍了BLoC，Reactive Programming和Streams的概念后，我在一段时间之前做了一些介绍，尽管与我分享一些我经常使用并且个人觉得非常有用的模式（至少对我而言）可能会很有趣。这些">
 <meta name="keywords" content="Flutter">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Flutter-BLoC-第二讲">
 <meta property="og:url" content="https://silencezhou.github.io/2019/03/14/Flutter-BLoC-第二讲/index.html">
 <meta property="og:site_name" content="SilenceZhou&#39;s Blog">
-<meta property="og:description" content="[译文]Reactive Programming - Streams - BLoC实际用例 原文 BLoC，Reactive Programming，Streams - 实际用例和有用模式。 [TOC]注：此处的”toc”应显示为目录，但是简书不支持，显示不出来。 介绍  在介绍了BLoC，Reactive Programming和Streams的概念后，我在一段时间之前做了一些介绍，尽管与我分享">
+<meta property="og:description" content="[译文]Reactive Programming - Streams - BLoC实际用例 原文 BLoC，Reactive Programming，Streams - 实际用例和有用模式。 介绍  在介绍了BLoC，Reactive Programming和Streams的概念后，我在一段时间之前做了一些介绍，尽管与我分享一些我经常使用并且个人觉得非常有用的模式（至少对我而言）可能会很有趣。这些">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc3/1.png">
-<meta property="og:updated_time" content="2020-03-18T02:45:04.464Z">
+<meta property="og:updated_time" content="2020-03-18T03:19:41.613Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flutter-BLoC-第二讲">
-<meta name="twitter:description" content="[译文]Reactive Programming - Streams - BLoC实际用例 原文 BLoC，Reactive Programming，Streams - 实际用例和有用模式。 [TOC]注：此处的”toc”应显示为目录，但是简书不支持，显示不出来。 介绍  在介绍了BLoC，Reactive Programming和Streams的概念后，我在一段时间之前做了一些介绍，尽管与我分享">
+<meta name="twitter:description" content="[译文]Reactive Programming - Streams - BLoC实际用例 原文 BLoC，Reactive Programming，Streams - 实际用例和有用模式。 介绍  在介绍了BLoC，Reactive Programming和Streams的概念后，我在一段时间之前做了一些介绍，尽管与我分享一些我经常使用并且个人觉得非常有用的模式（至少对我而言）可能会很有趣。这些">
 <meta name="twitter:image" content="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc3/1.png">
 
 
@@ -334,7 +334,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SilenceZhou">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar_square.jpg">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -417,7 +417,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  10k
+                  9.9k
                 </span>
               
 
@@ -456,7 +456,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc3/1.png" rel="gallery_ck7wq9hh6001hdaz1d7xqjjrc" itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc3/1.png" rel="gallery_ck7wrpcri00165bz12l6ekvh7" itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://gitee.com/SilenceZhou/BlogImageLibrary/raw/master/flutter_bloc3/1.png" itemprop="contentUrl">
               </a>
             
@@ -470,7 +470,6 @@
       
         <p><strong>[译文]Reactive Programming - Streams - BLoC实际用例</strong> <a href="https://www.didierboelens.com/2018/12/reactive-programming---streams---bloc---practical-use-cases/#4-form-validation" target="_blank" rel="noopener">原文</a></p>
 <p>BLoC，Reactive Programming，Streams - 实际用例和有用模式。</p>
-<p>[TOC]<br>注：此处的”toc”应显示为目录，但是简书不支持，显示不出来。</p>
 <p><strong>介绍</strong></p>
 <blockquote>
 <p>在介绍了BLoC，Reactive Programming和Streams的概念后，我在一段时间之前做了一些介绍，尽管与我分享一些我经常使用并且个人觉得非常有用的模式（至少对我而言）可能会很有趣。这些模式使我在开发过程中节省了大量时间，并使我的代码更易于阅读和调试。</p>
@@ -1068,7 +1067,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
             <a href="/">
-              <img class="site-author-image" itemprop="image" src="/images/avatar_square.jpg" alt="SilenceZhou">
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="SilenceZhou">
             </a>
             
               <p class="site-author-name" itemprop="name">SilenceZhou</p>
@@ -1082,7 +1081,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1093,7 +1092,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1104,7 +1103,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1206,7 +1205,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">29.1k</span>
+    <span title="Site words total count">27.8k</span>
   
 </div>
 
